@@ -3,6 +3,7 @@ package com.mycompany.peluqcanina.persistencia;
 
 import com.mycompany.peluqcanina.logica.Duenio;
 import com.mycompany.peluqcanina.logica.Mascota;
+import java.util.List;
 
 
 public class ControladoraPersistencia {
@@ -18,6 +19,11 @@ public class ControladoraPersistencia {
         //creamos en BD mascota
         mascoJpa.create(masco);
         
+    }
+
+    public List<Mascota> traerMascotas() {
+        
+        return mascoJpa.findMascotaEntities();
     }
     
 }

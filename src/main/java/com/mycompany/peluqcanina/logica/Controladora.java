@@ -1,6 +1,7 @@
 package com.mycompany.peluqcanina.logica;
 
 import com.mycompany.peluqcanina.persistencia.ControladoraPersistencia;
+import java.util.List;
 
 
 public class Controladora {
@@ -28,6 +29,12 @@ public class Controladora {
         controlPersis.guardar(duenio,masco);
        
          
+    }
+
+    public List<Mascota> traerMasccotas() {
+        
+        return controlPersis.traerMascotas();
+        
     }
     
     
